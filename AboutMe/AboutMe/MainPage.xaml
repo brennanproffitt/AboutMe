@@ -4,10 +4,26 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="About Me App"
              x:Class="AboutMe.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
+
+        <Frame>
+
+
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="AboutMe_Tapped">
+                </TapGestureRecognizer>
+            </Frame.GestureRecognizers>
+            
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <BoxView BackgroundColor="Gold"/>
+
+            </StackLayout>
+        </Frame>
+
         <Label Text="Brennan Proffitt" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
