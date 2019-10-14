@@ -5,28 +5,32 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="About Me App"
+             BackgroundColor="Crimson"
              x:Class="AboutMe.MainPage">
 
     <StackLayout>
 
-        <Frame>
-
-
+        <Frame BackgroundColor="Gold" 
+               CornerRadius="2" 
+               Margin="20">
+            
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer 
                     Tapped="AboutMe_Tapped">
                 </TapGestureRecognizer>
             </Frame.GestureRecognizers>
-            
+    
             <StackLayout Orientation="Horizontal" Spacing="20">
-                <BoxView BackgroundColor="Gold"/>
+                <BoxView BackgroundColor="White"
+                         HeightRequest="50"
+                         WidthRequest="50"/>
+                <Label Text="About Me"
+                       TextColor="DarkGray"
+                       FontSize="Large"/>
 
             </StackLayout>
         </Frame>
 
-        <Label Text="Brennan Proffitt" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>
