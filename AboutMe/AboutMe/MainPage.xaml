@@ -8,25 +8,19 @@
              BackgroundColor="Crimson"
              x:Class="AboutMe.MainPage">
 
-    <StackLayout>
+    <StackLayout VerticalOptions="End">
 
         <Frame BackgroundColor="Gold" 
-               CornerRadius="2" 
-               Margin="20">
-            
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer 
-                    Tapped="AboutMe_Tapped">
-                </TapGestureRecognizer>
-            </Frame.GestureRecognizers>
-    
-            <StackLayout Orientation="Horizontal" Spacing="20">
+               CornerRadius="2" >
+
+            <StackLayout Spacing="20">
                 <BoxView BackgroundColor="White"
                          HeightRequest="50"
-                         WidthRequest="50"/>
+                         WidthRequest="50"
+                         HorizontalOptions="Start"/>
                 <Label Text="About Me"
                        TextColor="DarkGray"
-                       FontSize="Large"/>
+                       FontSize="Small"/>
 
             </StackLayout>
         </Frame>

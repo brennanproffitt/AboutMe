@@ -18,9 +18,5 @@ namespace AboutMe
             InitializeComponent();
         }
 
-        private void AboutMe_Tapped(object sender, EventArgs e)
-        {
-
-        }
     }
 }
