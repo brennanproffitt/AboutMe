@@ -130,4 +130,7 @@
       <Name>AboutMe</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\profileicon.png" />
+  </ItemGroup>
 </Project>

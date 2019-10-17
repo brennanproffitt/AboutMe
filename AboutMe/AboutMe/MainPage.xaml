@@ -5,24 +5,58 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="About Me App"
-             BackgroundColor="Crimson"
+             BackgroundColor="White"
              x:Class="AboutMe.MainPage">
 
     <StackLayout VerticalOptions="End">
 
-        <Frame BackgroundColor="Gold" 
+        <Frame BackgroundColor="LightGray" 
                CornerRadius="2" >
+          <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+              
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <ImageButton Source="https://img.icons8.com/ios/50/000000/contract-job.png"
+                             HeightRequest="50"
+                             WidthRequest="50"
+                             HorizontalOptions="Start"
+                             Margin="15,0,0,0"/>
+                         <Label Text="About Me"
+                            TextColor="Black"
+                             FontSize="Small"
+                            HorizontalTextAlignment="Start"/>
+                    </StackLayout>
 
-            <StackLayout Spacing="20">
-                <BoxView BackgroundColor="White"
-                         HeightRequest="50"
-                         WidthRequest="50"
-                         HorizontalOptions="Start"/>
-                <Label Text="About Me"
-                       TextColor="DarkGray"
-                       FontSize="Small"/>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                            <ImageButton Source="https://img.icons8.com/dotty/80/000000/development-skill.png" 
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                HorizontalOptions="Center"/>
+                            <Label Text="Skills"
+                                TextColor="Black"
+                                FontSize="Small"
+                                HorizontalTextAlignment="Center"/>
+                    </StackLayout>
 
-            </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="2">
+                            <ImageButton Source="https://img.icons8.com/dotty/80/000000/contact-card.png"
+                                 HeightRequest="50"
+                                 WidthRequest="50"
+                                 HorizontalOptions="End"
+                                 Margin="0,0,20,0"/>
+                            <Label Text="Contact Me"
+                                   TextColor="Black"
+                                   FontSize="Small"
+                                   HorizontalTextAlignment="End" />
+                    </StackLayout>
+          </Grid>
         </Frame>
 
     </StackLayout>
