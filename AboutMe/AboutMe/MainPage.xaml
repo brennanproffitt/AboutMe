@@ -5,60 +5,96 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="About Me App"
-             BackgroundColor="White"
+             BackgroundColor="#FFECD0"
              x:Class="AboutMe.MainPage">
 
-    <StackLayout VerticalOptions="End">
+    <StackLayout>
+        <StackLayout VerticalOptions="Start">
+            <Frame BackgroundColor="LightGray"
+                   CornerRadius="2">
+                <Image Source="AboutMePhoto.png" 
+                   HeightRequest="200"
+                   WidthRequest="200"/>
+            </Frame>
+        </StackLayout>
 
-        <Frame BackgroundColor="LightGray" 
-               CornerRadius="2" >
-          <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-              
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="My name is Brennan Proffitt and I am currently studying at Pittsburg State university. I am working towards a Bachelor of Business Administration degree, majoring in Computer Information Systems. I am projected to graduate in May, 2021."
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="10,0,0,0">
+
+            </Label>
+            <Label Text="My hobbies outside of work and school include playing the drums, coding, playing video games with my friends, and hiking."
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="10,0,0,0">
+
+            </Label>
+            <Label Text="I currently work at The Home Depot in Pittsburg as a lumber associate. I enjoy driving the lift equipment and working with the software at the store to manage customer orders."
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="10,0,0,0">
+
+            </Label>
+        </StackLayout>
+        
+        <StackLayout Orientation="Vertical" VerticalOptions="End">
+            <Frame BackgroundColor="LightGray" 
+               CornerRadius="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
                     <StackLayout Grid.Row="0" Grid.Column="0">
                         <ImageButton Source="https://img.icons8.com/ios/50/000000/contract-job.png"
                              HeightRequest="50"
                              WidthRequest="50"
                              HorizontalOptions="Start"
-                             Margin="15,0,0,0"/>
-                         <Label Text="About Me"
+                             Margin="15,0,0,0"
+                             Clicked="AboutMeButton_Clicked"/>
+                        <Label Text="About Me"
                             TextColor="Black"
                              FontSize="Small"
                             HorizontalTextAlignment="Start"/>
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="1">
-                            <ImageButton Source="https://img.icons8.com/dotty/80/000000/development-skill.png" 
+                        <ImageButton Source="https://img.icons8.com/dotty/80/000000/development-skill.png" 
                                 HeightRequest="50"
                                 WidthRequest="50"
-                                HorizontalOptions="Center"/>
-                            <Label Text="Skills"
+                                HorizontalOptions="Center"
+                                Clicked="SkillsButton_Clicked"/>
+                        <Label Text="Skills"
                                 TextColor="Black"
                                 FontSize="Small"
                                 HorizontalTextAlignment="Center"/>
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="2">
-                            <ImageButton Source="https://img.icons8.com/dotty/80/000000/contact-card.png"
+                        <ImageButton Source="https://img.icons8.com/dotty/80/000000/contact-card.png"
                                  HeightRequest="50"
                                  WidthRequest="50"
                                  HorizontalOptions="End"
-                                 Margin="0,0,20,0"/>
-                            <Label Text="Contact Me"
+                                 Margin="0,0,20,0"
+                                 Clicked="ContactButton_Clicked"/>
+                        <Label Text="Contact Me"
                                    TextColor="Black"
                                    FontSize="Small"
                                    HorizontalTextAlignment="End" />
                     </StackLayout>
-          </Grid>
-        </Frame>
-
+                </Grid>
+            </Frame>
+        </StackLayout>
     </StackLayout>
-
+    
 </ContentPage>
