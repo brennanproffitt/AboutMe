@@ -4,44 +4,51 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="About Me App"
-             BackgroundColor="#FFECD0"
+             Title="About Me" 
+             BackgroundColor="White"
              x:Class="AboutMe.MainPage">
 
     <StackLayout>
         <StackLayout VerticalOptions="Start">
             <Frame BackgroundColor="LightGray"
                    CornerRadius="2">
-                <Image Source="AboutMePhoto.png" 
-                   HeightRequest="200"
-                   WidthRequest="200"/>
+                <StackLayout>
+                    <Label Text="Brennan Proffitt"
+                           FontSize="Large"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"/>
+                    <Image Source="aboutmephoto.png" 
+                   HeightRequest="125"
+                   WidthRequest="125"/>
+                </StackLayout>
             </Frame>
         </StackLayout>
 
+
         <StackLayout VerticalOptions="CenterAndExpand">
-            <Label Text="My name is Brennan Proffitt and I am currently studying at Pittsburg State university. I am working towards a Bachelor of Business Administration degree, majoring in Computer Information Systems. I am projected to graduate in May, 2021."
-                   FontSize="Medium"
+            <Label Text="My name is Brennan Proffitt and I am currently studying at Pittsburg State University. I am working towards a Bachelor of Business Administration degree, majoring in Computer Information Systems. I am projected to graduate in May, 2021."
+                   FontSize="Small"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   Margin="10,0,0,0">
+                   Margin="10">
 
             </Label>
             <Label Text="My hobbies outside of work and school include playing the drums, coding, playing video games with my friends, and hiking."
-                   FontSize="Medium"
+                   FontSize="Small"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   Margin="10,0,0,0">
+                   Margin="10">
 
             </Label>
             <Label Text="I currently work at The Home Depot in Pittsburg as a lumber associate. I enjoy driving the lift equipment and working with the software at the store to manage customer orders."
-                   FontSize="Medium"
+                   FontSize="Small"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   Margin="10,0,0,0">
+                   Margin="10">
 
             </Label>
         </StackLayout>
-        
+
         <StackLayout Orientation="Vertical" VerticalOptions="End">
             <Frame BackgroundColor="LightGray" 
                CornerRadius="2">
