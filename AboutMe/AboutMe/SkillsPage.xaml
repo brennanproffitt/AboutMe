@@ -8,7 +8,12 @@
              x:Class="AboutMe.SkillsPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Vertical" VerticalOptions="End">
+            <StackLayout VerticalOptions="Start">
+                <Entry x:Name="newSkillEntry" Placeholder="Enter a skill"/>
+                <Button Clicked="Button_Clicked" Text="Add Skill" />
+                <ListView x:Name="skillsList" Margin="10,0,10,0" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
                 <Frame BackgroundColor="LightGray" 
                CornerRadius="2">
                     <Grid>

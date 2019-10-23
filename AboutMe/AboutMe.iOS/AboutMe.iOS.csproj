@@ -132,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\aboutmephoto.png" />
+    <Content Include="Resources\contactIcon.png" />
     <Content Include="Resources\profileicon.png" />
   </ItemGroup>
 </Project>

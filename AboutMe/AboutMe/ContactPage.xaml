@@ -8,8 +8,22 @@
              x:Class="AboutMe.ContactPage">
     <ContentPage.Content>
         <StackLayout>
+
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Image Source="contactIcon.png" HeightRequest="50" WidthRequest="50" Margin="0,15,0,0"/>
+                <BoxView BackgroundColor="Black" HeightRequest="1" Margin="15" />
+                <Entry x:Name="nameEntry" Placeholder="Name" Margin="5"/>
+                <Entry x:Name="emailEntry" Placeholder="Email" Margin="5"/>
+                <Entry x:Name="phoneEntry" Placeholder="Phone" Margin="5"/>
+                <Entry x:Name="messageEntry" Placeholder="Message" Margin="5" HeightRequest="200"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+                <Button x:Name="submitButton" Text="Submit" />
+            </StackLayout>
+            
             <StackLayout>
-                <StackLayout Orientation="Vertical" VerticalOptions="End">
+                <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
                     <Frame BackgroundColor="LightGray" 
                CornerRadius="2">
                         <Grid>
