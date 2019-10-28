@@ -32,5 +32,29 @@ namespace AboutMe
             Navigation.PushAsync(new ContactPage());
         }
 
+        private async void SubmitButton_Clicked(object sender, EventArgs e)
+        {
+            if (nameEntry.Text == "" || nameEntry.Text == null)
+            {
+                await DisplayAlert("Error", "Please enter your name.", "Return");
+                return;
+            }
+
+            if (emailEntry.Text == "" || emailEntry.Text == null || !emailEntry.Text.Contains ("@") || !emailEntry.Text.Contains ("."))
+            {
+                await DisplayAlert("Error", "Please enter a valid email.", "Return");
+                return;
+            }
+
+            if (messageEntry.Text == "" || messageEntry.Text == null)
+            {
+                await DisplayAlert("Error", "Please enter a message.", "Return");
+                return;
+            }
+
+            await DisplayAlert("Thank you!", "Your message was sent and I will get back to you shortly.", "Return");
+
+            await Navigation.PopAsync();
+        }
     }
 }

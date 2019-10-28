@@ -13,13 +13,17 @@ namespace AboutMe
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SkillsPage : ContentPage
     {
-        public ObservableCollection<string> Skills { get; set; }
+        public ObservableCollection<skillItem> Skills { get; set; }
 
         public SkillsPage()
         {
             InitializeComponent();
 
-            this.Skills = new ObservableCollection<string>();
+            this.Skills = new ObservableCollection<skillItem>();
+
+            skillItem macOSSkill = new skillItem();
+
+
         }
 
         private void AboutMeButton_Clicked(object sender, EventArgs e)
@@ -37,13 +41,5 @@ namespace AboutMe
             Navigation.PushAsync(new ContactPage());
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            this.Skills.Add(newSkillEntry.Text);
-
-            newSkillEntry.Text = "";
-
-            skillsList.ItemsSource = this.Skills;
-        }
     }
 }
