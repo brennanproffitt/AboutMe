@@ -133,6 +133,11 @@
   <ItemGroup>
     <Content Include="Resources\aboutmephoto.png" />
     <Content Include="Resources\contactIcon.png" />
+    <BundleResource Include="Resources\icons8_apple_logo.png" />
+    <BundleResource Include="Resources\icons8_c_sharp_logo.png" />
+    <BundleResource Include="Resources\icons8_microsoft_excel.png" />
+    <BundleResource Include="Resources\icons8_pencil.png" />
+    <BundleResource Include="Resources\icons8_xcode.png" />
     <Content Include="Resources\profileicon.png" />
   </ItemGroup>
 </Project>

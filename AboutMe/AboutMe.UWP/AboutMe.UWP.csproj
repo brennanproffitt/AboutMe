@@ -133,6 +133,11 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="contactIcon.png" />
+    <Content Include="icons8_apple_logo.png" />
+    <Content Include="icons8_c_sharp_logo.png" />
+    <Content Include="icons8_microsoft_excel.png" />
+    <Content Include="icons8_pencil.png" />
+    <Content Include="icons8_xcode.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>

@@ -9,15 +9,19 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Start">
-                <ListView x:Name="skillsList" Margin="10,0,0,0" HasUnevenRows="True" HeightRequest="300">
+                <ListView x:Name="skillsList" Margin="10,0,0,0" HasUnevenRows="True" SelectionMode="None" HeightRequest="600">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding Name}" />
                                     <Image Source="{Binding Icon}"
                                            WidthRequest="50"
-                                           HeightRequest="50"/>
+                                           HeightRequest="50"
+                                           Margin="20,30,20,30"/>
+                                    <Label Text="{Binding Name}" 
+                                           FontSize="30"
+                                           Margin="20,30,20,30"
+                                           VerticalOptions="Center"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
