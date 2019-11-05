@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -99,7 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AboutMe\AboutMe.csproj">
-      <Project>{295ED3BB-AE0D-4904-8AD6-EFEC763A51AB}</Project>
+      <Project>{ADEB0741-4D44-46E5-A90E-28E3E0E6B328}</Project>
       <Name>AboutMe</Name>
     </ProjectReference>
   </ItemGroup>
