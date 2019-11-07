@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Start">
-                <ListView x:Name="skillsList" Margin="10,0,10,0" HasUnevenRows="True" HeightRequest="555">
+                <ListView x:Name="skillsList" Margin="10,0,10,0" HasUnevenRows="True" HeightRequest="555" ItemSelected="skillsList_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

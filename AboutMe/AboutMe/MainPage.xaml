@@ -24,7 +24,7 @@
             </Frame>
         </StackLayout>
 
-
+        <ScrollView>
         <StackLayout VerticalOptions="CenterAndExpand">
             <Label Text="My name is Brennan Proffitt and I am currently studying at Pittsburg State University. I am working towards a Bachelor of Business Administration degree, majoring in Computer Information Systems. I am projected to graduate in May, 2021."
                    FontSize="Large"
@@ -48,7 +48,7 @@
 
             </Label>
         </StackLayout>
-
+        </ScrollView>
         <StackLayout Orientation="Vertical" VerticalOptions="End">
             <Frame BackgroundColor="LightGray" 
                CornerRadius="2">
