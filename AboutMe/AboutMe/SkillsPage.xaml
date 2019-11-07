@@ -8,7 +8,7 @@
              x:Class="AboutMe.SkillsPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout VerticalOptions="Start">
+            <StackLayout>
                 <ListView x:Name="skillsList" Margin="10,0,0,0" HasUnevenRows="True" SelectionMode="None" HeightRequest="600">
                     <ListView.ItemTemplate>
                         <DataTemplate>
