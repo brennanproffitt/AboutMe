@@ -41,7 +41,7 @@
                              HeightRequest="40"
                              WidthRequest="40"
                              HorizontalOptions="Start"
-                             Margin="20,0,0,0"
+                             Margin="5,0,0,0"
                              Clicked="AboutMeButton_Clicked"/>
                                 <Label Text="About Me"
                             TextColor="Black"
@@ -66,7 +66,7 @@
                                  HeightRequest="40"
                                  WidthRequest="40"
                                  HorizontalOptions="End"
-                                 Margin="0,0,25,0"
+                                 Margin="0,0,5,0"
                                  Clicked="ContactButton_Clicked"/>
                                 <Label Text="Contact Me"
                                    TextColor="Black"
